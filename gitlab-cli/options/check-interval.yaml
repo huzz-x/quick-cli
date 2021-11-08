@@ -1,0 +1,2 @@
+description: "轮询Pipeline状态的时间间隔, 单位秒, 默认10秒"
+default: 10

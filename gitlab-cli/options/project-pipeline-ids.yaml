@@ -1,0 +1,1 @@
+description: "要同步等待结束的Pipeline的描述串, 格式: <project_id>#<pipeline_id>,<pipeline_id>, 多个Project以#分隔, 多个PipelineID以,分隔, 例如: '539#2070,2072 540#207'"

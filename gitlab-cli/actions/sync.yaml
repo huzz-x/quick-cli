@@ -1,0 +1,4 @@
+description: "同步等待指定的Pipeline结束"
+use_example: "gitlab-cli sync --project-pipeline-ids='539#2070,2072 540#2073' --access-token=<access_token> --check-interval=10"
+options: [ check-interval ]
+required: [ access-token, project-pipeline-ids ]

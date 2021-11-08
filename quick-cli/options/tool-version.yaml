@@ -1,0 +1,4 @@
+description: 要构建的工具版本
+type: value
+default: v1.0.0
+short: v

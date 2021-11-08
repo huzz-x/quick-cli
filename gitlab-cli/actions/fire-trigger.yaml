@@ -1,0 +1,4 @@
+description: "触发指定项目的Pipeline"
+use_example: "gitlab-cli fire-trigger --project-id=539 --access-token=<access_token> --ref=master --trigger-params='hh=123 xx=456'"
+options: [  ]
+required: [ access-token, project-id, ref]

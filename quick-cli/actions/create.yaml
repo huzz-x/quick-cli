@@ -1,0 +1,4 @@
+description: 创建cli
+use_example: "./quick-cli.sh create --tool-name=\"lark-cli\" --tool-version=\"v1.0.0\""
+options: [ tool-version ]
+required: [ tool-name ]

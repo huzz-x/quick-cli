@@ -1,0 +1,41 @@
+{
+  "msg_type": "post",
+  "content": {
+    "post": {
+      "zh_cn": {
+        "title": "APP构建成功",
+        "content": [
+          [
+            {
+              "tag": "text",
+              "text": "名称: $QT_APP_NAME"
+            }
+          ],
+          [
+            {
+              "tag": "text",
+              "text": "版本: $QT_APP_VERSION"
+            }
+          ],
+          [
+            {
+              "tag": "text",
+              "text": "下载方式: oras pull $$app_registry_path"
+            }
+          ],
+          [
+            {
+              "tag": "text",
+              "text": "说明: "
+            },
+            {
+              "tag": "a",
+              "text": "oras安装方式",
+              "href": "https://git.example.cn/ms/oras/-/blob/main/README.md"
+            }
+          ]
+        ]
+      }
+    }
+  }
+}
