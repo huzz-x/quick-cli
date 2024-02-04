@@ -3,14 +3,12 @@ readonly R_COLOR_G="\x1b[0;32m"
 readonly R_COLOR_R="\x1b[1;31m"
 readonly R_COLOR_Y="\x1b[1;33m"
 readonly R_RESET="\x1b[0m"
-
 readonly R_ACTION_PREFIX="action_"
 readonly R_ACTION_PARAMS_CHECK_PREFIX="action_params_check_"
 
 readonly R_OPTION_TYPE_FLAG="flag"
 readonly R_OPTION_TYPE_VALUE="value"
 readonly R_OPTION_TYPE_VALUE_OPT="value_opt"
-
 # shellcheck disable=SC2034
 readonly R_PARAM_TOOL_NAME_DESCRIPTION="要构建的工具名称"
 # shellcheck disable=SC2034
@@ -530,9 +528,11 @@ action_create() {
   readonly R_TOOL_FILE="${tool_name}/${tool_name}.sh"
 cat > "$R_TOOL_FILE" << EOF
 #!/bin/bash
-
+readonly R_COLOR_G="\x1b[0;32m"
+readonly R_COLOR_R="\x1b[1;31m"
+readonly R_COLOR_Y="\x1b[1;33m"
+readonly R_RESET="\x1b[0m"
 $ret_variables_str
-
 $ret_description_var_str
 
 ## 一般日志打印
