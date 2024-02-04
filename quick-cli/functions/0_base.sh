@@ -6,7 +6,10 @@ create_dynamic_var() {
   local value="$2"
   # 需要将"-"转换成"_"
   name="${name//-/_}"
-  eval "$name=$value"
+  # 需要将"""转换成"\""
+  value="${value//\"/\\\"}"
+  # 加上双引号, 解决字符串带有空格报错的问题
+  eval "$name=\"$value\""
 }
 
 ## 获取简单变量

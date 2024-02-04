@@ -1,5 +1,4 @@
 #!/bin/bash
-
 readonly R_COLOR_G="\x1b[0;32m"
 readonly R_COLOR_R="\x1b[1;31m"
 readonly R_COLOR_Y="\x1b[1;33m"
@@ -443,9 +442,7 @@ readonly R_COLOR_G="\x1b[0;32m"
 readonly R_COLOR_R="\x1b[1;31m"
 readonly R_COLOR_Y="\x1b[1;33m"
 readonly R_RESET="\x1b[0m"
-
 $ret_variables_str
-
 $ret_description_var_str
 
 ## 一般日志打印
