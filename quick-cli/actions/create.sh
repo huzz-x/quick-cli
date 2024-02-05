@@ -1,4 +1,5 @@
 create() {
+  check_command "yq"
   calc_options
   calc_resolve_loop
   calc_actions_str

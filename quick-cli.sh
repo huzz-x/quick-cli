@@ -519,6 +519,7 @@ calc_variables_str() {
 }
 
 action_create() {
+  check_command "yq"
   calc_options
   calc_resolve_loop
   calc_actions_str
