@@ -532,7 +532,7 @@ explain_action_with_param() {
     return
   fi
   echo
-  IFS="," read -r -a option_params_arr <<< "\$options_str"
+  IFS=" " read -r -a option_params_arr <<< "\$options_str"
   printf "%s\n" "options:"
   for option_param in "\${option_params_arr[@]}"; do
     var_name="R_PARAM_\$(echo "\${option_param^^}" | tr '-' '_')_DESCRIPTION"
